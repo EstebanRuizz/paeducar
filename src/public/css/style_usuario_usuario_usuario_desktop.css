@@ -1,0 +1,186 @@
+:root
+{
+    --negro-principal: #151515;
+    --azul-botones: #2C81D0;
+    --gris-botones: #999999;
+    --gris-ventanas: #D9D9D9;
+    --gris-ventanas-emergentes: #2E2F31;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url("./assets/imgs/desktop/No_tiny/parque_educativo_soleado.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 100vw 100vh;
+    
+}
+
+
+.titulo_desktop
+{
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    font: bold;
+    background-color: #151515;
+
+}
+.contenedor_perfil_usuario{
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    /* background-color: rgb(149, 149, 248); */
+    /* background-color: rgba(0, 0, 0, 0.434); */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgb(149, 149, 248); */
+    margin-top:70px;
+    display: grid;
+    grid-template-columns: auto  auto;
+    grid-template-rows: auto;
+    
+}
+.container_imagen_user{
+    display: flex;
+    padding: 20px;  
+}
+.img-user{
+    width: 300px;
+    height: 300px;
+    background-image: url('./assets/perfil_usuario/user_start.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60%;
+    margin: auto;
+}
+.personal-data
+{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 10px;
+}
+.item_info_user{
+    width: 100%;
+    padding: 8px;
+    background-color: var(--gris-ventanas);
+    box-shadow: 7px 7px 12px 0 white;
+    min-height: max-content;
+    border-radius: 3px;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+    margin-bottom: 10px;
+    height: max-content;
+    font-size: 1.8rem;
+}
+.nombre
+{
+    grid-area: 1/2/2/3;
+    align-self: auto;
+}
+.correo
+{
+    grid-area: 2/2/2/3; 
+}
+.numero
+{
+    grid-area: 3/2/4/3;
+}
+
+.cerrar_sesion_usuario
+{
+    grid-area: 4/2/5/3;
+}
+
+/* .update_account
+{
+    grid-area: 4/2/5/3;
+}
+.cerrar_sesion_usuario
+{
+    grid-area: 5/2/6/3;
+}
+ */
+
+.icono_Usuario_desktop
+{
+
+    width: 20px;
+    height: 20px;
+    /* width: 50%;  */
+    background-color: var(--gris-ventanas);
+    box-shadow: 7px 7px 12px 0 white; 
+    min-height: max-content;
+    border-radius: 3px;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+    margin-bottom: 10px;
+    max-width: 95%;
+    height: max-content;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+ 
+.name
+{
+    grid-area: 1/1/2/2;
+    background-image: url('./assets/perfil_usuario/user_start.svg');
+
+}
+.mail
+{
+    grid-area: 2/1/3/2;
+    margin-top: 11px;
+    background-image: url('./assets/perfil_usuario/mdi_gmail.svg');
+}
+.phone
+{
+    grid-area:3/1/4/2;
+    margin-top: 12px;
+    background-image: url('./assets/perfil_usuario/phone1.svg');
+}
+
+.close_sesion
+
+{
+    grid-area: 4/1/5/2;
+    background-image: url('./assets/perfil_usuario/close.svg');
+}
+
+
+
+/* .update_dates
+
+{
+    background-image: url('./assets/perfil_usuario/update.svg');
+    grid-area: 4/1/5/2;
+} */
+/* .close_sesion
+
+{
+    grid-area: 5/1/6/2;
+    background-image: url('./assets/perfil_usuario/close.svg');
+} */
+
+footer{
+    position: relative;
+}
+
+
+
+

@@ -1,0 +1,139 @@
+/* body{
+    background-color: aqua;
+} */
+/* main
+{
+  
+    margin-top: 60px;
+    margin-left: 2vw;
+    margin-right: 2vw; 
+} */
+
+h1
+{
+    margin-top: 120px;
+/* 
+    border-bottom: solid;
+    border-width: 1px; */
+    font-size: 6rem;
+    text-align: center;
+    padding: 20px;
+
+
+    
+}
+
+/* .search_users
+{
+    display: block;
+    height:20vh;
+} */
+
+/* .inpunt-usuario{
+    margin-top: 20px;
+    background-color: var(rgb(129, 129, 129));
+    text-align: center;
+    align-self: center; 
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border-style:hidden;                    
+    border: 0.5px solid;
+    height: 7vh;
+    width: 80%;
+  
+}
+
+.button-buscar
+{
+    margin-top: 20px;
+    border-radius: 5px ;
+    border: none;
+    width: max-content;
+    padding:10px;
+    background-color: rgb(141, 214, 243);
+
+}
+
+.button-buscar:hover{
+   cursor: pointer;
+   background-color: rgba(222, 222, 222, 0.998);
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.all_users
+{
+     margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: block; 
+    padding: 5px;
+} */
+/* 
+.table_all_users
+{
+    border-color: black;
+    border: solid;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+
+.table_all_users
+{
+    border-color: none;
+
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2rem;   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 95%;
+}
+th{
+    background-color: rgb(211, 236, 248);
+    border-color: black;
+    border: solid;  
+}
+td
+{
+    border-color: black;
+    border: solid;  
+}
+
+tr
+{
+    border-color: black;
+    border: solid;
+}
+
+td
+{
+    border-color: black;
+    border: solid;
+}
+
+ .delete_icon
+{
+    background-image:  url('./assets/icons/administrador_icons/delete_icon.svg');
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+} 

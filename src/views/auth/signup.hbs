@@ -1,0 +1,62 @@
+<body>
+    <section class="formulario_crear_cuenta"> 
+
+            <form class="form_create_account" action="/signup" method="POST">
+            <h1 class="h1-desktop">Formulario Crear Cuenta</h1>
+
+            <input class="input-informacion" type="text" placeholder="Número de identificación" title="Ingresa tu identificacion" name="id_usuario" id="" required maxlength="18" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+
+            <input class="input-informacion" type="email" placeholder="Correo electronico" title="Ingresa tu Correo electronico" name="correo_usuario" id="" required maxlength="180">
+            
+            <input class="input-informacion" type="text" placeholder="Nombres" title="Ingresa tus nombres" name="nombres" id="" required maxlength="180" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+ 
+            <input class="input-informacion" type="text" placeholder="Apellidos" title="Ingresa tus apellidos" name="apellidos" id="" requiredmaxlength="180" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+            
+            <input class="input-informacion" type="text" placeholder="Teléfono " title="Ingresa tu Telefono" name="telefono" id="" maxlength="100" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+             
+            <input class="input-informacion" type="password" placeholder= "Contraseña" title="Ingresa tu clave" name="password" id="" required maxlength="100">
+             
+            <input class="input-informacion" type="password" placeholder="Confirmar contraseña" title="Ingresa tu clave nuevamente" name="confirmar_clave" id="" required maxlength="100">
+   
+            {{!--  <h2 class="h2-class"> Recibir información sobre: </h2>
+            
+           <section class="check-boxes"> 
+
+                <section class="option-check1 radious">
+                    <input class="boxes check1" type="checkbox" placeholder="#" name="notificacion_cursos" id="sobre_cursos" >
+
+                    <p class="datos_label check1" for="sobre_eventos">Sobre Cursos</p>
+                </section> 
+                
+                <section class="option-check2 radious">
+                    <input class="boxes check2" type="checkbox" placeholder="#" name="notificacion_periodicos" id="sobre_periodicos">
+                    <p class="datos_label check2" for="sobre_eventos">Sobre Periodicos</p>
+                </section>
+                
+                <section class="option-check3 radious">
+                    <input class="boxes check3" type="checkbox" placeholder="#" name="notificacion_reuniones" id="sobre_reuniones">
+                    <p class="datos_label check3" for="sobre_eventos">Sobre Reuniones</p>
+                </section>
+                
+                <section class="option-check4 radious">
+                    <input class="boxes check4" type="checkbox" placeholder="#" name="notificacion_noticias" id="sobre_noticias">
+                    <p class="datos_label check4" for="sobre_eventos">Sobre Noticias</p>  
+                </section>
+            
+                <section class="option-check5 radious">
+                    <input class="boxes check5" type="checkbox" placeholder="#" name="notificacion_eventos" id="sobre_eventos"> 
+                    <p class="datos_label check5" for="sobre_eventos">Sobre Eventos</p>  
+                </section>         
+
+            </section> --}}
+   
+            <input class="intput-button" type="submit" value="Crear">
+ 
+        </form>   
+    </section>
+
+    <footer>
+        <figure class="imagen_final">.</figure>
+    </footer>
+
+</body>

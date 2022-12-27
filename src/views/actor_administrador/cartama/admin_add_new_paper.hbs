@@ -1,0 +1,59 @@
+    <header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p class="nom-inicio">Inicio</p>
+                <p class="nom-educacion">Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>    
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search_box">
+            <a href="/actores/administrador/inicio/admin_inicio.html" >
+                <figure></figure>
+            </a>
+            
+            <div class="contenedor-buscador-paper">
+                <input class="search-box-paper" type="search" name="intput_busqueda" id="input_busqueda" placeholder="¿Qué edicion buscas?" maxlength="30">
+            </div>
+            
+
+        </section>
+        
+        <section class="add_new_paper">
+                <figure></figure>
+                <a href="/admin_cartama/periodicos/add" class="text">Agregar Periodico</a>
+        </section>
+
+        <section class="table_papers" >
+            <table>
+                <tr class="title_row">
+                    <th class="paper_name">Nombre</th>
+                    <th class="paper_">Fecha</th>
+                    <th class="paper_delete">Accion</th>
+                </tr>
+                {{#each query_paper}}
+                <tr class="data_row">
+                    <td>{{nombre_periodico}}</td>
+                    <td>{{created_at}}</td>
+                    <td class="delete_button"><a href="/delete_periodico/{{id_periodico}}">Eliminar</a></td>
+                </tr>
+                {{/each}}
+   
+            </table>
+        </section>
+
+    </main>
+ 

@@ -1,0 +1,232 @@
+:root
+{
+    --negro-principal: #151515;
+    --azul-botones: #2C81D0;
+    --gris-botones: #999999;
+    --gris-ventanas: #D9D9D9;
+    --gris-ventanas-emergentes: #2E2F31;
+    --gris-footer:#232020;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+
+header
+{
+    height:min-content;
+    width:100%;
+    background-color: var(--negro-principal);
+    position: fixed;
+    top:0px;
+    padding-bottom:10px;
+}
+
+main{
+    margin-top: 70px;
+}
+
+
+header .Portafolio-Servicios .contenedor-iconos-header{
+      padding-top: 35px;/*Esto lo agregamos para poder ver los iconos*/
+     display: flex;
+     list-style: none;
+     justify-content:space-around;
+
+}
+.contenedor-iconos-header .icon span
+{
+    padding: 30px;
+}
+/******************Esto tiene que quedar funcionando bien, hay secciona bien los espacios, hacer queries que sean necesarias******************/
+
+.contenedor-iconos-header .icon span:hover,
+.contenedor-iconos-header .icon span:active
+{
+    font-size: 12px;
+    background-color:#5aada6;
+    border-radius: 1vh;
+    
+}
+
+/************************************/
+
+
+.contenedor-iconos-header .icon1 span{
+   background-image: url("./assets/icons/header/Inicio-Icon.svg");
+   background-size: contain ;  /*Para que los iconos no se corten, utilizamos: contain; en lugar de Cover*/
+   background-repeat: no-repeat;
+
+
+}
+
+.contenedor-iconos-header .icon2 span
+{
+    background-image: url('./assets/icons/header/Cursos-Icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.contenedor-iconos-header .icon3 span
+{
+    background-image: url('./assets/icons/header/Reservas-Iconsvg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.contenedor-iconos-header .icon4 span
+{
+    background-image: url('./assets/icons/header/Whatsapp-Icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.contenedor-iconos-header .icon5 span
+{
+    background-image: url('./assets/icons/header/Catama-Icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.contenedor-iconos-header .icon6 span
+{
+    background-image: url('./assets/icons/header/Cuenta-Icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.contenedor-iconos-header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.contendor-iconos-nombres{
+    margin-top: 15px;
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    justify-content: space-around;
+}
+
+.contendor-iconos-nombres p{
+    margin-left: 10px;
+    
+}
+
+
+
+/* ----------------------------footer------------------------- */
+
+
+.contenedor-footer{
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--gris-footer);
+    font-size: 2.2rem;
+    padding: 10px 0;
+}
+
+.medios_contacto
+{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.medios_contacto:hover, .medios_contacto:active
+{
+    font-size: 1.9rem;
+    color: #2C81D0;
+    padding-bottom: 10px;
+    border-bottom: solid #2C81D0;
+    border-bottom-width: 1px;
+}
+
+
+.contenedor-footer .informacion-contacto{
+    width: 50%;
+}
+
+.informacion-contacto{
+    
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    justify-content: center;
+    row-gap: 15px;
+    font-size: 2rem;
+    color: white;
+}
+
+.redes-digitales-parque-iconos {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: grid;
+    justify-content: center;
+    row-gap: 15px;
+    
+}
+/*Aqui terminan los estilos del Footer*/
+
+
+/*--------------------------------------media query-------------------------------------------*/
+
+@media screen and (min-width: 1024px){
+
+    
+    header .Portafolio-Servicios .contenedor-iconos-header{
+    padding-top: 20px;/*Esto lo agregamos para poder ver los iconos*/
+   display: flex;
+   list-style: none;
+   justify-content:space-around;
+
+}
+    .contenedor-iconos-header .icon span
+    {
+        padding: 15px;
+    }
+    .contenedor-iconos-header .icon5 span
+    {
+        background-image: url('./assets/icons/header/Catama-Icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 15px;
+    }
+    
+    .contenedor-iconos-header .icon6 span
+    {
+        background-image: url('./assets/icons/header/Cuenta-Icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 15px;
+    }
+
+    
+.contendor-iconos-nombres{
+    margin-top: 10px;
+    display: flex;
+    font-size: 1.8rem;
+    color: white;
+    justify-content: space-around;
+}
+}

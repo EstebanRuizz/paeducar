@@ -1,0 +1,57 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+
+<main class="contenedor-nueva-publicacion">
+    
+        <section class="seccion-formulario">
+            <form class="formulario" action="admin_nueva_publicacion" method="POST" enctype="multipart/form-data" id="">
+                <h2>Nueva Publicación</h2>
+               <div class="contenido_Formulario">
+                    
+                    <label for="titulo_Publicacion">
+                        <input class="form-inputs titulo" type="text" id="id_publicacion" name="titulo_publicacion" placeholder="Titulo de la publicación:" required maxlength="90" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+                    </label>
+                              
+                    <label for="tipo-Publicacion">
+                        <input class="form-inputs" type="text" id="tipo-Publicacion" name="tipo_publicacion" placeholder="Tipo publicación:" required maxlength="90" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+                    </label>
+ 
+                    <label for="link_form_publicacion">
+                        <input class="form-inputs" type="text" maxlength="500" id="link_form_publicacion" name="link_form_publicacion" placeholder="Link del formulario" maxlength="490">
+                    </label>
+
+                    <label for="contenido_Publicacion">
+                        <textarea class="form-inputs-texarea" maxlength="500" required id="contenido_Publicacion" cols="30" rows="10" name="descripcion" placeholder="Contenido de la publicación: " ></textarea>
+                    </label>    
+
+                    <div class="contenedor-file"> 
+                        <p class="texto">Subir imagen</p>
+                            <label for="img-Publicacion">
+                                <input class="paper-dowl" type="file" id="img-Publicacion" name="imagen" placeholder="Subir Imagen">
+                            </label>
+                    </div>
+                 
+                <input class="form_boton" type="submit">
+                    
+               </div> 
+            </form>    
+        </section>
+</main>

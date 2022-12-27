@@ -1,0 +1,134 @@
+:root
+{
+    --negro-principal: #151515;
+    --azul-botones: #2C81D0;
+    --gris-botones: #999999;
+    --gris-ventanas: #D9D9D9;
+    --gris-ventanas-emergentes: #2E2F31;
+    --gris-footer:#232020;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+main{
+    margin-top: 120px;
+}
+
+.icon-container
+{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+}
+
+.icon-container-img
+{
+        width: 50%;
+        text-align: end;
+}
+
+h2
+{
+    border-bottom: solid;
+    border-width: 1px;
+}
+h2 a
+{
+    text-decoration: none;
+    color: #151515;
+    font-size: 3rem;
+
+}
+
+h2 a:hover, h2 a:active{
+    font-size: 3.2rem;
+    color: #2C81D0;
+}
+
+.alianza{
+        
+    margin: 130px auto; 
+    display: grid;
+    grid-template-columns:repeat(2, 500px);
+    grid-template-rows: minmax(300px, 350px);
+    max-width: 500px;
+    justify-content: center;
+    
+}
+.alianza .alianza-imagen{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255,255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    
+}
+.alianza .alianza-imagen img{
+    margin-top:10px;
+    max-height: 300px;
+    max-width: 400px;
+}
+.alianza .nombre-de-alianza{
+    margin-top:10px;
+    margin-left: 10px;
+    font-size:5rem;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+.alianza .nombre-de-alianza{
+    margin-top:10px;
+    margin-left: 10px;
+    font-size:5rem;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+.alianza .tipo-de-alianza{
+    font-size:4rem;
+    margin-left: 10px;
+}
+
+.alianza-imagen img{
+    width: 100%;
+}
+
+button
+{
+    text-align: center;
+}
+
+.delete-button
+{
+    position: relative;
+    background-image: url("./assets/icons/administrador_icons/Trash-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 8vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.delete-button a
+{   
+    text-decoration: none;
+    color: #151515;
+    padding-bottom: 5vh;
+    border-bottom: dashed;
+    border-width: 1px;
+    border-color: red;
+}
+

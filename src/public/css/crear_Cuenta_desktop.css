@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/imgs/desktop/No_tiny/titulo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.formulario_crear_cuenta{
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #dddddd;
+}
+
+.h1-desktop{
+    font-size: 2.7rem;
+    margin-bottom:30px;
+}
+
+.input-informacion{
+    height: 10px;
+    font-size: 1.7rem;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px; 
+}
+
+.h2-class{
+    font-size: 1.8rem;
+}
+.datos_label{
+    font-size: 1.6rem;
+
+}
+
+
+form .intput-button
+{
+ 
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: auto;
+    width: min-content;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: var(--azul-botones);
+    margin-left: calc(50% - 50px);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.radious{
+    padding: 5px;
+}
+    
+.imagen_final
+{
+    background-image: url("./assets/imgs/mobile/escudo_bandera_tamesis.svg");
+    height: 85px;
+    width: 40%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+
+

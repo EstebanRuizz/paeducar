@@ -1,0 +1,53 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/inicio_usuario"><span></span></a></li>
+                <li class="icon icon2"><a href="/educacion_usuario"> <span></span></a></li>
+                <li class="icon icon3"><a href="/reservas_usuario"> <span></span></a></li>
+                <li class="icon icon4"><a href="/contacto_usuario"> <span></span></a></li>
+                <li class="icon icon5"><a href="/cartama_usuario"> <span></span></a></li>
+                <li class="icon icon6"><a href="/usuario_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+
+<main class="contenedor-nueva-publicacion">
+            
+                
+        <section class="seccion-formulario">
+
+                
+            
+            
+            <form class="formulario" action="/inicio_usuario/inscripcion/{{req_id_inscription}}" method="POST" id="">
+                <h2>Formulario de inscripción</h2>
+               <div class="contenido_Formulario">
+
+                    {{#each req_id_inscription}}
+                        
+                    {{/each}}
+
+                    <input type="text" class="input_bloqueado" name="req_id_inscription" value="{{req_id_inscription}}" readonly>
+
+                    <label for="titulo_Publicacion">
+                        <input class="form-inputs titulo" type="text" id="id_usuario" name="id_usuario" placeholder="Numero de Identificacion" required maxlength="18" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                    </label>
+                            
+                    
+                 
+             <a href=""{{link_form_publicacion}}> <input class="form_boton" type="submit"></a> 
+                
+                    
+               </div>
+            </form>    
+            
+        </section>
+</main>

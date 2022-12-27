@@ -1,0 +1,54 @@
+section{
+    height: 50vh;
+    width: 100%;
+    flex-direction:row;
+}
+.logo-parque{
+    background-image: url("./assets/imgs/mobile/logo-cartama.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 28px;
+    border-radius: 10px;
+    width: 500px;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-top: 80px;
+    border-bottom: 2px solid var(--azul-botones);
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 200px;
+    
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    text-decoration: none;
+    justify-content: center;
+    background-color: var(--azul-botones);
+}
+
+a:hover{
+    background-color: #115ba0;
+}

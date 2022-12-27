@@ -1,0 +1,34 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/inicio_usuario"><span></span></a></li>
+                <li class="icon icon2"><a href="/educacion_usuario"> <span></span></a></li>
+                <li class="icon icon3"><a href="/reservas_usuario"> <span></span></a></li>
+                <li class="icon icon4"><a href="/contacto_usuario"> <span></span></a></li>
+                <li class="icon icon5"><a href="/cartama_usuario"> <span></span></a></li>
+                <li class="icon icon6"><a href="/usuario_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+
+<main class="contenedor-nueva-publicacion">
+            
+        <section class="redirect">
+            {{#each query_link_publication}}
+                <h1>Ingresa al formulario de inscripcion!</h1>
+                <h2>
+                    
+                    <a class="tag_a" href="{{link_form_publicacion}}">Continuar con el Proceso</a>
+                </h2>
+            {{/each}}
+        </section>
+
+</main>

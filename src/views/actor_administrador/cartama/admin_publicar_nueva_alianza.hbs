@@ -1,0 +1,65 @@
+ <header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header"> 
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>                  
+                <p>Educacion</p>
+                <p>Reservas</p> 
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+    <main>                                 
+        
+        <h1>Agregar alianza</h1>
+        <section class="formario-alianza">
+            
+            <form class="formulario-agregar-alianza" method="post" action="/admin_cartama/alianzas/add" enctype="multipart/form-data"> 
+                    
+                <input class="institucion" type="text" name="nombre_alianza" id="nombre-alianza-a-crear" placeholder="Nombre de la institucion" maxlength="90" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+
+                <label class="label-tipo"for="tipo-alianza">Elige el tipo de alianza</label>
+
+            
+                <input class="institucion" type="text" name="tipo_alianza" id="nuevo-tipo-alianza" placeholder="Ingresa el tipo de Alianza" maxlength="90" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+              
+            
+                <span class="label-tipo">Logo de la institución</span>
+                <label for="logo-imagen-institucion"></label>
+
+                <div class="contenedor-file">
+                    <p class="texto">Subir Documento</p>
+                             <input class="paper-dowl" type="file" name="imagen_alianza" placeholder="#" id="" value="">
+                 </div>
+
+                <input type="submit" class="boton-crear-alianza" value="Subir Alianza" >
+            </form>
+      
+        </section>
+
+        <footer class="contenedor-footer">
+            <section  class="informacion-contacto">
+                <p>informacion de contacto: </p>
+                <p >Dirección: a 12-101, Cl. 17 #121, Támesis, Antioquia Verificar</p>
+                <p >Email: parqueeducativocartama@..... </p>
+                <p >Teléfono: </p>
+                
+            </section>
+    
+            <section class="redes-digitales-parque-iconos">
+                <a href=""><img src="../../../assets/icons/administrador_icons/facebook-icon.svg" alt="Icono de facebook"></a>
+                <a href=""><img src="../../../assets/icons/administrador_icons/Twitter-icon.svg" alt="Icono de Twitter"></a>
+                <a href=""><img src="../../../assets/icons/administrador_icons/Instagram-icon.svg" alt="Icono de Instagram"></a>
+            </section>
+        </footer>
+
+    </main>

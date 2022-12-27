@@ -1,0 +1,37 @@
+.section_developers
+{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.singular_developer
+{
+    margin-top: 45px;
+    
+}
+
+.name
+{
+    font-size: 3.2rem;
+    color: #484848;
+}
+
+.contac_way
+{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #2e6c8e;
+    
+}
+
+.contac_way:hover, .contac_way:active
+{
+    font-size: 1.7rem;
+    color: #d02c2c;
+    border-bottom: #d02c2c solid;
+    border-width: 1px;
+    
+}
+

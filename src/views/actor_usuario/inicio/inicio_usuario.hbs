@@ -1,0 +1,112 @@
+<body>
+    <header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/inicio_usuario"><span></span></a></li>
+                <li class="icon icon2"><a href="/educacion_usuario"> <span></span></a></li>
+                <li class="icon icon3"><a href="/reservas_usuario"> <span></span></a></li>
+                <li class="icon icon4"><a href="/contacto_usuario"> <span></span></a></li>
+                <li class="icon icon5"><a href="/cartama_usuario"> <span></span></a></li>
+                <li class="icon icon6"><a href="/usuario_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>                             
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>    
+            </div>       
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-imagen-bienvenida">
+            <section class="imagen-para-desktop">
+                <p>Parque educativo cartama "Un encuentro de saberes"</p>
+            </section>
+        </section>
+
+        <section class="contendor-buscador-bandera">
+            <div class="escudo-bandera">
+    
+            </div>
+                <div class="contenedor-buscador">
+                    <input class="search-box" type="search" name="intput_busqueda" id="input_busqueda" placeholder="¿Qué quieres buscar?" maxlength="30">
+                </div>
+
+
+        </section>
+        <div class="titulo-contenido">
+            <p class="class_info_p gf">Noticias y eventos de divulgacion</p>
+        </div>
+
+                   
+                <section class="contenido-del-inicio">
+            {{#each query_publications}}    
+
+                {{#if edu}}
+                            
+                        <article class="article-1">
+
+                            <div class="contenedor-info-publicacion">
+                                <output class="titulo-publicacion">
+                                    {{titulo_publicacion}} 
+                                </output>
+                                <output class="tipo-publicacion">
+                                    {{tipo_publicacion}}
+                                </output>   
+                                <p class="separador">-</p>
+                                <output class="fecha-publicacion"> 
+                                    {{created_at}}
+                                </output>
+
+                            </div>
+
+                                <output class="descripcion">
+                                {{descripcion}}
+                                </output>
+                                
+                                        <img class="imagen_publicacion" src="data:image/png;base64, {{imagen}}" alt="Imagen de la publicacion">
+                                
+                                <div class="button-container"> 
+                                    <a  href="/inicio_usuario/inscripcion/{{{id_publicacion}}}"><input class="intput-button" type="button" value="Me inscribo"></a>
+                                </div>
+                        </article>
+                        
+                    {{else}}
+
+                        <article class="article-1">
+
+                            <div class="contenedor-info-publicacion">
+                                <output class="titulo-publicacion">
+                                    {{titulo_publicacion}} 
+                                </output>
+                                <output class="tipo-publicacion">
+                                    {{tipo_publicacion}}
+                                </output>   
+                                <p class="separador">-</p>
+                                <output class="fecha-publicacion"> 
+                                    {{created_at}}
+                                </output>
+
+                            </div>
+
+                                <output class="descripcion">
+                                {{descripcion}}
+                                </output>
+                                
+                                        <img class="imagen_publicacion" src="data:image/png;base64, {{imagen}}" alt="Imagen de la publicacion">
+                    
+                        </article>
+
+                {{/if}}
+
+            {{/each}}
+        </section>
+
+
+     
+    </main>
+</body>
+

@@ -1,0 +1,33 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+                </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p> 
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+    
+<main>
+  <h1>Informacion inscritos al curso</h1>
+        <section class="Curso-participantes">
+            {{#each ver_postulados_educacion}}
+                    <div class="info-persona">
+                        <p class="nombre-persona"> Nombre persona: {{nombres}}</p>
+                        <p class="correo-persona">Correo Persona: {{correo_usuario}}</p>
+                        <p class="correo-persona">Telefono persona: {{telefono}}</p>
+                    </div>
+            {{/each}}
+        </section>
+</main>

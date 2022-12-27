@@ -1,0 +1,92 @@
+body{
+    background-image: url("./assets/imgs/desktop/No_tiny/parque_11.jpg");
+    background-size: 100% 100vh;
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+main{
+    margin: 60px 0;
+    padding-top: 58px;
+
+    padding-bottom: 5vh;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.Curso-participantes
+{
+    background-color: #D9D9D9;
+    margin: 10px auto;
+    min-height: max-content;
+    padding-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.titulo-participantes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.titulo-participantes h2{
+    border-bottom: 1px solid black;
+
+}
+.boton-notificar{
+    background-color: #0072F8;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.info-persona{
+    margin-left: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0072F8;
+   margin-right: 10px;
+}
+ .nombre-persona{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+ .correo-persona{
+    color: grey;
+}
+
+.info-persona-papeleria{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.Carpeta-papeleria{
+    width: 40%;
+    height: 15%;
+    margin: 30px auto;
+    background-image: url("../../../assets/icons/administrador_icons/folder_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.Carpeta-info{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.apartado-botones{
+margin: 30px 10px;
+text-align: center;
+
+}
+.apartado-botones .boton-notificar{
+    padding: 10px;
+}

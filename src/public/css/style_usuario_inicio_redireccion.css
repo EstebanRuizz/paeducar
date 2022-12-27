@@ -1,0 +1,35 @@
+body
+{
+    text-align: center;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+section
+{
+    margin-top: 300px;
+    
+}
+
+h1
+{
+    font-size: 3rem;
+    margin-bottom: 20px;;
+}
+
+.tag_a
+{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(154, 220, 223);
+    font-size: 2.5rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.tag_a:hover, .tag_a:active
+{
+    font-size: 2.7rem;
+    background-color: #387AB7;
+    color: white;
+}

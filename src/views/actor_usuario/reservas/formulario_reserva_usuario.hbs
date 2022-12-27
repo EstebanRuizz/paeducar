@@ -1,0 +1,60 @@
+ <header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/inicio_usuario"><span></span></a></li>
+                <li class="icon icon2"><a href="/educacion_usuario"> <span></span></a></li>
+                <li class="icon icon3"><a href="/reservas_usuario"> <span></span></a></li>
+                <li class="icon icon4"><a href="/contacto_usuario"> <span></span></a></li>
+                <li class="icon icon5"><a href="/cartama_usuario"> <span></span></a></li>
+                <li class="icon icon6"><a href="/usuario_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+    <main class="contenedor-nueva-publicacion">
+    
+        <section class="seccion-formulario">
+            <form class="formulario" action="/reservas_usuario/reservar_espacio/reserva_salon" method="POST" id="">
+                <h2>Reserva un Ambiente!</h2>
+               <div class="contenido_Formulario">
+                    
+                    <label for="cars"><span class="elegir_ambiente">Elige el ambiente a Reservar</span></label>
+
+                    <select class="menu_opciones" name="ambiente" id="ambiente">
+                        <option class="opcion_menu" value="1">Sala Insonorizada</option>
+                        <option class="opcion_menu" value="2">Salaon B2</option>
+                        <option class="opcion_menu" value="3">Salon B1</option>
+                        <option class="opcion_menu" value="4">Salon A2</option>
+                        <option class="opcion_menu" value="5">Salon A1</option>
+                    </select>
+
+
+                    <label for="identificacion">
+                        <span class="titulo_span" >Numero de identificacion: </span>
+                        <input class="form-inputs titulo" type="text" name="id_usuario" id="identificacion" placeholder="Ingrese su numero de identificacion" required maxlength="18" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                    </label>
+
+                    <label for="telefono">
+                        <span class="titulo_span">Medio de Contacto: </span>
+                        <input class="form-inputs titulo" type="text" name="telefono" id="identificacion" placeholder="Ingrese su telefono o correo electronico" required maxlength="90" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                    </label>
+                        
+  
+                    <label for="motivo_Reserva">
+                        <textarea class="form-inputs-texarea" name="descripcion" id="motivo_Reserva" cols="30" rows="10" placeholder="Motivo reserva: " required maxlength="500"></textarea>
+                    </label>
+
+                <input class="form_boton" type="submit">
+                    
+               </div>
+            </form>    
+        </section>
+
+    </main>

@@ -1,0 +1,26 @@
+body
+{
+    text-align: center;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+section
+{
+    margin-top: 300px;
+    
+}
+
+h1
+{
+    font-size: 3rem;
+}
+
+input
+{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(154, 220, 223);
+    font-size: 2.5rem;
+    padding: 10px;
+}

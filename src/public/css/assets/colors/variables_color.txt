@@ -1,0 +1,5 @@
+--negro-principal: #151515;
+--azul-botones: #2C81D0;
+--gris-botones: #999999;
+--gris-ventanas: #D9D9D9;
+--gris-ventanas-emergentes: #2E2F31;

@@ -1,0 +1,59 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+{{!--  
+    <main>
+        <section class="search_users">
+           
+
+            <input type="search" placeholder="Correo del usuario: " name="identificacion-usuario" class="inpunt-usuario"  maxlength="190">
+
+            <input type="button" placeholder="BUSCAR" value="Buscar"  class="button-buscar" id="p" >
+
+        </section>
+    </main> --}}
+
+ <h1>Usuarios del sistema</h1>
+
+
+    <section class="all_users">
+                <table class="table_all_users">
+                    <tr>
+                        <th>Identificacion</th>
+                        <th>Nombres</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>   
+                        <th>Eliminar</th>   
+                    </tr>
+                    {{#each all_users}}
+                        <tr>
+                            <td>{{id_usuario}}</td>
+                            <td>{{nombres}}</td>
+                            <td>{{correo_usuario}}</td>
+                            <td>{{telefono}}</td>
+                            <td ><a href="/eliminar_usuario/{{id_usuario}}" class=""><img class="delete_icon" src="" alt=""></a></td>
+                        </tr>
+                    {{/each}}
+                </table>
+    </section>
+
+              
+
+

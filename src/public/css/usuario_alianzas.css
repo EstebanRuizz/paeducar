@@ -1,0 +1,56 @@
+main{
+    margin:100px auto;
+}
+.icon-container{
+
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    }
+    .icon-container-image{
+        width: 50%;
+        text-align: end;
+    }
+    .icon-container p{
+        margin-top: 10px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    .alianza{
+        
+        margin: 130px auto; 
+        display: grid;
+        grid-template-columns:repeat(2, 500px);
+        grid-template-rows: minmax(300px, 350px);
+        max-width: 500px;
+        justify-content: center;
+        
+    }
+    .alianza .alianza-imagen{
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 0 2px rgb(255,255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        
+    }
+    .alianza .alianza-imagen img{
+        margin-top:10px;
+        max-height: 300px;
+        max-width: 400px;
+    }
+    .alianza .nombre-de-alianza{
+        margin-top:10px;
+        margin-left: 10px;
+        font-size:5rem;
+        margin-bottom:10px;
+        font-weight: bold;
+    }
+    .alianza .tipo-de-alianza{
+        font-size:4rem;
+        margin-left: 10px;
+    }
+
+    .alianza-imagen img{
+        width: 100%;
+    }

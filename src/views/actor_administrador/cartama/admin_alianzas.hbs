@@ -1,0 +1,57 @@
+<header>
+      <nav class="Portafolio-Servicios">
+        <ul class="contenedor-iconos-header">
+         
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+        </ul>
+        <div class="contendor-iconos-nombres">
+          <p>Inicio</p>
+          <p>Educacion</p>
+          <p>Reservas</p>
+          <p>Contacto</p>
+          <p>Cartama</p>
+          <p>Usuario</p>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+    <main>
+      <div class="icon-container">
+        <h2><a href="/admin_cartama/alianzas/add" title="Agregar nueva alianza">Agregar nueva alianza </a></h2>
+        <a href="/admin_cartama/alianzas/add">
+            
+            
+
+        </a>
+        <!--cambiar icono add -->
+      </div>
+
+      <section class="contenido-alianzas">
+         {{#each query_aliances}}
+              <div class="alianza">
+                <figure class="alianza-imagen">
+                    <img src="data:image/png;base64, {{imagen_alianza}}" alt="Imagen de la alianza">
+                  
+                </figure>
+                <div class="info-alianza">
+                  <p class="nombre-de-alianza">{{nombre_alianza}}</p>
+                  <p class="tipo-de-alianza">{{tipo_alianza}}</p>
+                  <figure class="delete-button"><a href="/delete_alianza/{{id_alianza}}">ELIMINAR</a></figure>
+
+                  
+                </div>
+              </div>
+          {{/each}}
+      </section>
+    </main>

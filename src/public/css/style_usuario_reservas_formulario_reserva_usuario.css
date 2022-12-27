@@ -1,0 +1,133 @@
+:root
+{
+    --negro-principal: #151515;
+    --azul-botones: #2C81D0;
+    --gris-botones: #999999;
+    --gris-ventanas: #D9D9D9;
+    --gris-ventanas-emergentes: #2E2F31;
+    --gris-footer:#232020;
+}
+
+/* h2{
+    text-align: center;
+    border-bottom: solid;
+    border-width: 1px;
+    margin-top: 58px;
+    width: 25vw;                       
+    margin-left: 37.5vw;
+    margin-left: 37.5vw;
+    margin-bottom: 2vh;
+    padding: 10px;
+    background-color: wheat;
+ 
+} */
+body{
+    background-image: url("./assets/imgs/desktop/No_tiny/parque_11.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: rgba(0, 0, 0, 0.61);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h2{
+ 
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(71, 71, 71);
+}
+
+ 
+.seccion-formulario{
+    background-color: rgba(0, 0, 0, 0.34);
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    margin-top: 85px;
+
+    
+
+}
+
+.formulario{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+    border-radius: 1em;
+    padding: 3.5rem 1.5em;
+    
+}
+
+.contenido_Formulario{
+   width: 100%;
+   display: grid;
+   gap: 1em;
+   grid-auto-columns: 100%;
+   padding: .8em 1em;
+}
+span{
+    font-size: 1.8rem;
+    padding: 5px;
+}
+.opcion_menu
+{
+    font-size: 1.6rem;
+    padding: 5px;
+  
+}
+.menu_opciones
+{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.titulo_span
+{
+    font-size: 1.8rem;
+}
+.form-inputs{
+    width: 100%;
+    padding: 1rem;
+    outline: none; 
+    border: none;
+    border: 1px solid #c0bcbc;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.form-inputs-texarea{
+    resize: none;
+    padding: 1.8em 1em;
+    width: 100%; 
+    border: none;
+    border-radius: 0.2em;
+    border: 1px solid #c0bcbc;
+    animation: backwards;
+    
+    
+    /* margin-bottom: 0.5em; */
+}
+ 
+.form_boton{
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #c0bcbc;
+    background-color: rgb(124, 124, 254);
+    color: white;
+    
+}
+
+.form_boton:hover, .form_boton:active{
+    font-size: 150%;
+    background-color: rgb(53, 53, 237);
+    box-shadow: 0px 10px 10px rgb(173, 170, 170);
+}
+
+.oculto-id-del-amibiente{
+    display: none;
+}

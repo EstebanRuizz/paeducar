@@ -1,0 +1,77 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+                </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p> 
+                <p>Usuario </p>
+            </div>
+        </nav>
+    </header>
+    <section class="contenedor-imagen-bienvenida">
+        <section class="imagen-para-desktop">
+            <p class="slogan_cartama">Parque educativo cartama "Un encuentro de saberes"</p>
+        </section>
+    </section>
+    <section>
+
+   
+
+    <main>
+        
+        <div class="titulo-pagina">
+            <h1 class="cursos_acti_desktop">Cursos activos <hr></h1>
+        </div>
+        
+         <section class="contenido-del-inicio">
+            {{#each query_education_publications}}    
+                    <article class="article-1">
+
+                        <section class="meta-informacion">
+                            <output class="titulo-publicacion">
+                                {{titulo_publicacion}}
+                            </output>
+                            
+                            <output class="tipo-publicacion">
+                                {{tipo_publicacion}}
+                            </output>
+
+                            <output class="tipo-publicacion">
+                                {{link_form_publicacion}}
+                            </output>
+
+                            <p class="separador">-</p>
+                            <output class="fecha-publicacion">
+                                {{created_at}}
+                            </output>
+                        </section>     
+
+                            <output class="descripcion">
+                                {{descripcion}}
+                            </output>
+                            
+                            <output>
+                                <img class="imagen_publicacion" src="data:image/png;base64, {{imagen}}" alt="">
+                            </output>
+
+
+                        <div class="container_postulados">
+                         <a class="intput-button intput-button_desktop " href="/admin_educacion/ver_postulados_educacion/ {{id_publicacion}}">Ver postulados</a>
+                        </div>
+                        
+
+                    </article>
+            {{/each}}
+        </section>
+
+    </main> 

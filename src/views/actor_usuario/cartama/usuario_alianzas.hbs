@@ -1,0 +1,42 @@
+<header>
+      <nav class="Portafolio-Servicios">
+        <ul class="contenedor-iconos-header">
+         
+                <li class="icon icon1"><a href="/inicio_usuario"><span></span></a></li>
+                <li class="icon icon2"><a href="/educacion_usuario"> <span></span></a></li>
+                <li class="icon icon3"><a href="/reservas_usuario"> <span></span></a></li>
+                <li class="icon icon4"><a href="/contacto_usuario"> <span></span></a></li>
+                <li class="icon icon5"><a href="/cartama_usuario"> <span></span></a></li>
+                <li class="icon icon6"><a href="/usuario_usuario"> <span></span></a></li>
+        </ul>
+        <div class="contendor-iconos-nombres">
+          <p>Inicio</p>
+          <p>Educacion</p>
+          <p>Reservas</p>
+          <p>Contacto</p>
+          <p>Cartama</p>
+          <p>Usuario</p>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <section class="contenido-alianzas">
+         {{#each query_aliances}}
+              <div class="alianza">
+                <figure class="alianza-imagen">
+                  <img class="alianza_imagen"
+                    src="data:image/png;base64, {{imagen_alianza}}"
+                    alt="Imagen de una alianza" title="Imagen de dicha Alianza"
+                  />
+                </figure>
+                <div class="info-alianza">
+                  <p class="nombre-de-alianza">{{nombre_alianza}}</p>
+                  <p class="tipo-de-alianza">{{tipo_alianza}}</p>
+                </div>
+              </div>
+          {{/each}}
+      </section>
+    </main>

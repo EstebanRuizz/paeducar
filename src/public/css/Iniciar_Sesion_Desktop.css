@@ -1,0 +1,107 @@
+
+
+body .logo-parque
+{
+    width: 40vw;
+    height: 40vh;
+    background-image: url("./assets/imgs/mobile/logo-cartama.svg");
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+
+
+form .inputs
+{
+    padding: 10px; 
+    margin: 20px;
+    border-radius: 7px;
+    width: 65vw;
+    box-shadow: 5px 5px rgba(3, 1, 1, 0.178);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+form .intput-button
+{
+    color: white;
+    font-weight: bold;
+    background-color: var(--azul-botones);
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: 8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: 8px;
+    box-shadow: 4px 5px rgba(3, 1, 1, 0.178);
+}
+
+
+section .nueva-cuenta
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #115ba0;
+    font-size: 2.2vh;
+}
+
+section .olvido-clave
+{
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: #115ba0;
+    font-size: 2.2vh;
+}
+
+section .nueva-cuenta:hover
+{
+    font-size: 2.2vh;
+    color: #0c4173;
+    font-weight: bold;
+}
+section .olvido-clave:hover
+{
+    font-size: 2.2vh;
+    color: #0c4173;
+    font-weight: bold;
+}
+
+
+.intput-button:hover
+{
+    background-color: rgb(6, 6, 175);
+}
+.intput-button:active
+{
+    padding: 8px;
+    box-shadow: 4px 5px rgba(3, 1, 1, 0.178);
+}
+
+.inputs
+{
+    max-width: 45rem;
+}
+
+
+
+.logo-bandera
+{
+    margin-top: 7vh;
+}
+
+
+.logo-bandera
+{
+    background-image: url("./assets/imgs/mobile/escudo_bandera_tamesis.svg");
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+ <header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p class="nom-inicio">Inicio</p>
+                <p class="nom-educacion">Educacion</p>
+                <p>Reservas</p>
+                <p>Contacto</p>
+                <p>Cartama</p>    
+                <p>Usuario </p>
+            </div> 
+        </nav>
+    </header>
+
+    <section class="imagen-encabezado">
+        <img src="/assets/imgs/mobile/escudo_bandera_tamesis.svg" alt="">
+    </section>
+    
+    <main>
+        <h1>Agregar Periodico</h1>
+        
+        <form class="fomulario-agregar-periodicos" enctype="multipart/form-data" action="/admin_cartama/periodicos/add" method="post">
+
+            <input class="paper_title" type="text" name="nombre_periodico" placeholder="Titulo" id="" value="" required maxlength="90" oninput="this.value = this.value.replace(/[^a-zñ A-ZÑ]/g, '').replace(/(\..*)\./g, '$1');">
+
+     
+            <label for="editorial_periodico">Elija el editorial:</label>
+
+            <select name="editorial_periodico" id="editorial_periodico">
+                <option value="el_relator">El Relator</option>
+                <option value="el_saman">El Saman</option>
+                <option value="el_petroglifo">El Petroglifo</option>
+            </select>           
+            
+            <section class="publication_date">
+          
+            </section>
+
+            <div class="contenedor-file">
+               <p class="texto">Subir Documento</p>
+                        <input class="paper-dowl" type="file" placeholder="#" id="" value="" name="periodico" required>
+            </div>
+
+            <input class="submit_paper_button" type="submit" value="Publicar"> 
+
+        </form>        
+            
+    </main>

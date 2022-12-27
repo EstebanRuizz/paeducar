@@ -1,0 +1,49 @@
+<header>
+        <nav class="Portafolio-Servicios">
+            <ul class="contenedor-iconos-header">
+                <li class="icon icon1"><a href="/admin_inicio"><span></span></a></li>
+                <li class="icon icon2"><a href="/admin_educacion"> <span></span></a></li>
+                <li class="icon icon3"><a href="/admin_reservas"> <span></span></a></li>
+                <li class="icon icon4"><a href="/admin_contacto"> <span></span></a></li>
+                <li class="icon icon5"><a href="/admin_cartama"> <span></span></a></li>
+                <li class="icon icon6"><a href="/admin_usuario"> <span></span></a></li>
+            </ul>
+            <div class="contendor-iconos-nombres">
+                <p>Inicio</p>
+                <p>Educacion</p>
+                <p>Reservas</p>                             
+                <p>Contacto</p>
+                <p>Cartama</p>
+                <p>Usuario </p>
+            </div>
+        </nav>
+</header>
+
+<main class="clases-del-main">
+        <h1 class="titulo titulo_desktop">Mi perfil!</h1>
+
+    <section class="contenedor_perfil_usuario">
+
+        <section class="container_imagen_user">
+                    <figure class="img-user"></figure>          
+        </section>
+            
+            <section class="personal-data">
+    
+                <output class="nombre item_info_user">{{user.nombres}}</output>            
+                <output class="correo item_info_user">{{user.correo_usuario}} </output>
+                <output class="numero item_info_user">{{user.telefono}}</output>                    
+                
+                <a class="item_info_user ver_usuarios" href="admin_usuario/listar_usuarios" >Ver usuarios</a>
+                <a class="item_info_user cerrar_sesion_usuario " href="/logout">Cerrar sesion</a>
+                <a class="item_info_user actualizar_clave" href="/nueva_clave">Actualizar Clave</a>
+
+                <span class="icono_Usuario icono_Usuario_desktop name"></span>
+                <span class="icono_Usuario icono_Usuario_desktop mail"></span>
+                <span class="icono_Usuario icono_Usuario_desktop phone"></span>
+                <span class="icono_Usuario icono_Usuario_desktop close_sesion"></span>
+                <span class="icono_Usuario icono_Usuario_desktop all_users"></span>
+     
+            </section>
+    </section>
+</main>

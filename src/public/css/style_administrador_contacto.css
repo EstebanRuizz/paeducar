@@ -1,0 +1,73 @@
+:root
+{
+    --negro-principal: #151515;
+    --azul-botones: #2C81D0;
+    --gris-botones: #999999;
+    --gris-ventanas: #D9D9D9;
+    --gris-ventanas-emergentes: #2E2F31;
+}     
+             
+body{
+    background-image: url("./assets/imgs/desktop/No_tiny/parque_11.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: rgba(0, 0, 0, 0.61);         
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.contenedor-nueva-publicacion{
+    margin-top: 100px;
+    display: flex;
+}
+.titulo
+{
+    font-size: 3rem;
+    color: white;
+    padding: 40px;
+}
+.nueva_publicacion
+{
+
+    width: 50vw;
+    height: 88vh;
+    background-color: gray;
+    margin:auto;
+    text-align: center;
+    background-color: rgba(21, 21, 21, 0.823);
+ 
+
+}
+/* .link_whatsapp{
+
+} */
+
+.img_whatsapp{
+    width: 300px;                                              
+    height: 300px;
+    margin-top: 80px;
+    background-image: url("./assets/icons/administrador_icons/Watsapp-contacto-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain ;
+  
+
+
+}
+
+
+
+
+
+
+
+/* 
+.nueva-publicacion{
+    width: 50vw;
+    height: 96vh;
+    background-color: gray;
+    margin:auto;
+    text-align: center;
+    
+} */
+

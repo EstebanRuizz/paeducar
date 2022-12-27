@@ -1,0 +1,54 @@
+.titulo2_desktop{
+    text-align: center;
+    padding: 40px;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+hr{
+
+    color: black;
+    
+}
+.contenedor_padre_hap{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+.item{
+    margin: auto;
+    text-decoration: none;
+    margin: auto;
+}
+
+.nombre_item{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 2.5rem;
+    color: black;
+    
+}
+.historia_letras{
+    padding-top: 75px;
+}
+
+.periodico_item{
+    padding-bottom: 10px;
+}
+.alianzas
+{
+  background-image: url('./assets/icons/administrador_icons/Alianzas_icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding:100px 100px;
+}
+
+.periodicos
+{
+  background-image: url('./assets/icons/administrador_icons/newspaper.svg ');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding:80px 80px;
+}

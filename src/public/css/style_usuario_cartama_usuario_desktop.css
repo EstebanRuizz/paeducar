@@ -1,0 +1,45 @@
+.titulo2{
+    text-align: center;
+    padding: 40px;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+hr{
+
+    color: black;
+    
+}
+.contenedor_padre_hap{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}    
+.item{
+    margin: auto;
+    text-decoration: none;
+    margin: auto;
+}
+
+.nombre_item{
+    text-align: center;         
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 2.5rem;
+    color: black;
+    
+}
+.historia_letras{
+    padding-top: 40px;
+}
+
+.periodico_item{
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+.periodicos_letras{
+    margin-top: 30px;
+        padding-bottom: 10px;
+    margin-right: 40px;
+}
